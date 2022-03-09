@@ -7,9 +7,14 @@ while("True"):
     if(choise == "1"):
         for i in range(100):
             print(i)
-    elif (choise == "2"):
-        fibo = [1, 2, 3, 5, 8, 13, 21]
 
+###################################################
+
+    elif (choise == "2"):
+        # fibo = [1, 2, 3, 5, 8, 13, 21]
+        fibo = []
+        for i in range (7):
+            fibo.append(int(input("Enter a number : \n")))
         bool = "True"
         for i in range(2, len(fibo)):
             print(fibo[i])
@@ -26,15 +31,17 @@ while("True"):
         if (bool == "False"):
             print("This is not fibo series")
 
+###################################################
+
     elif(choise == "3"):
-        for i in range(10):
+        for counter in range(10):
             num = randint(1, 12)
             print(num)
-            if (num == 250):
+            if (num == 12):
                 print("We get the number 12")
                 break
             else:
-                print("We don't gte the number 12")
+                print("Counter : " + str(counter) + " Number : " + str(num) + "\n")
         else:
             print("Choose only 1 - 3 ! ! !\n")
     exit = input("Do you want to exit y / n ?\n")
